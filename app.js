@@ -45,6 +45,9 @@ class Enemy {
     this.y += 1;
     ctx.fillStyle = this.color;
     ctx.fillRect(this.x, this.y, ENEMIES_SIZE, ENEMIES_SIZE);  //dá pra usar um cara pra usar uma imagem
+    ctx.fillStyle = "#000000";
+    ctx.strokeRect(this.x + 8, this.y + 8, HERO_SIZE - 16, HERO_SIZE - 16);  
+    ctx.strokeRect(this.x + 16, this.y + 16, HERO_SIZE - 32, HERO_SIZE - 32);  
   }
 }
 
@@ -66,6 +69,9 @@ class Hero {
     // Drawing the hero itself.
     ctx.fillStyle = this.color;
     ctx.fillRect(this.x, this.y, HERO_SIZE, HERO_SIZE);  
+    ctx.fillStyle = "#000000";
+    ctx.strokeRect(this.x + 8, this.y + 8, HERO_SIZE - 16, HERO_SIZE - 16);  
+    ctx.strokeRect(this.x + 16, this.y + 16, HERO_SIZE - 32, HERO_SIZE - 32);  
   }
 
   //******/Checks the hero position against enemies position.
