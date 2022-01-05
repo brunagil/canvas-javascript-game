@@ -11,4 +11,6 @@ body {
 canvas {
   margin-top: 50px;
   background-color: black;
+  border: 12px solid #888888;
+  border-radius: 8px;
 }
